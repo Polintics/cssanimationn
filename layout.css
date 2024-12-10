@@ -1,0 +1,242 @@
+.mainscreen {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  background-color: aqua;
+  position: relative;
+}
+
+.transform {
+  background-color: white;
+  font-size: 2vw;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  animation: move-left 2s ease-in-out infinite;
+  transition: all 1s;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+
+@keyframes move-left {
+  100% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+.MU {
+  background-color: white;
+  font-size: 2vw;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  animation: move-right 2s ease-in-out infinite;
+  transition: all 1s;
+  border-left: 2px solid black;
+  border-top: 2px solid black ;
+  border-bottom: 2px solid black ;
+}
+
+@keyframes move-down {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.date {
+  background-color: white;
+  font-size: 2vw;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  animation: move-right 2s ease-in-out infinite;
+  transition: all 1s;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+
+  
+}
+
+@keyframes move-right {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.portaltxt{
+  background-color: white;
+  font-size: 2vw;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  animation: move-leftportal 2s ease-in-out infinite;
+  transition: all 1s;
+  outline: solid;
+  outline-color: black;
+  outline-width: 2px;
+}
+@keyframes move-leftportal {
+  100% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.opendoor{
+  background-color: white;
+  font-size: 2vw;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  animation: move-down 2s ease-in-out infinite;
+  transition: all 1s;
+  outline: solid;
+  outline-color: black;
+  outline-width: 2px;
+}
+
+.portals {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+}
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.word {
+  font-size: 2vw;
+  color: white;
+}
+
+.portal {
+  background-color: blue;
+  border-radius: 100vw;
+  animation: portalScale ease infinite 10s;
+  animation-delay: var(--delay);
+}
+
+@keyframes portalScale {
+
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 35%; background: yellow;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.lastSection {
+  background-color: pink;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  height: 100%;
+  width: 5%;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  font-size: 2vw;
+  animation: columnStretch ease-in-out infinite 5s;
+}
+.letter {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  animation: goUpAndDown ease-in-out infinite 5s;
+  animation-delay: calc(var(--delay) * 2s);
+  width: 100%;
+}
+
+.column:nth-of-type(even) {
+  height: 100%;
+  width: 5%;
+  background-color: magenta;
+}
+
+@keyframes columnStretch {
+  50% {
+    width: 25%;
+  }
+  100% {
+    width: 5%;
+  }
+}
+
+@keyframes goUpAndDown {
+  0% {
+    height: 50%;
+  }
+  25% {
+    height: 100%;
+  }
+  50% {
+    height: 5%;
+  }
+  100% {
+    height: 50%;
+  }
+}
