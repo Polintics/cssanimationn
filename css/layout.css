@@ -1,10 +1,27 @@
+.grid-container {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr); 
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/image.svg);
+}
+
+.grid-item {
+  box-sizing: border-box; 
+  border: 1px solid black; 
+
+}
+
 .mainscreen {
   height: 100vh;
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  background-color: aqua;
+  background-size: 100%;
+  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -23,7 +40,9 @@
   transition: all 1s;
   border-style: solid;
   border-color: black;
-  border-width: 2px;
+  border-width: 1px;
+  outline: 1px solid black;
+  padding-bottom: 1px;
 }
 
 @keyframes move-left {
@@ -50,11 +69,10 @@
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  animation: move-right 2s ease-in-out infinite;
-  transition: all 1s;
-  border-left: 2px solid black;
+  border-left: 1px solid black;
   border-top: 2px solid black ;
-  border-bottom: 2px solid black ;
+  border-bottom: 1px solid black ;
+  outline: 1px black solid;
 }
 
 @keyframes move-down {
@@ -71,8 +89,8 @@
 .date {
   background-color: white;
   font-size: 2vw;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
   display: flex;
@@ -83,8 +101,9 @@
   transition: all 1s;
   border-style: solid;
   border-color: black;
-  border-width: 2px;
-
+  border-width: 1px;
+  border-top: 2px BLACK solid;
+  outline: 1px black solid;
   
 }
 
@@ -93,7 +112,7 @@
     transform: translateX(0%);
   }
   50% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
   100% {
     transform: translateX(0%);
@@ -103,26 +122,28 @@
 .portaltxt{
   background-color: white;
   font-size: 2vw;
-  grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 4;
   display: flex;
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  animation: move-leftportal 2s ease-in-out infinite;
+  animation: move-rightportal 2s ease-in-out infinite;
   transition: all 1s;
   outline: solid;
   outline-color: black;
-  outline-width: 2px;
+  outline-width: 1px;
+  border: 1px black solid;
+  margin-left: 2px;
 }
-@keyframes move-leftportal {
+@keyframes move-rightportal {
   100% {
     transform: translateX(0%);
   }
   50% {
-    transform: translateX(-50%);
+    transform: translateX(50%);
   }
   100% {
     transform: translateX(0%);
@@ -142,9 +163,11 @@
   text-align: center;
   animation: move-down 2s ease-in-out infinite;
   transition: all 1s;
+  border-right: 2px black solid;
+  border: 1px black solid;
   outline: solid;
   outline-color: black;
-  outline-width: 2px;
+  outline-width: 1px;
 }
 
 .portals {
