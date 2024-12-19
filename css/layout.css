@@ -132,13 +132,9 @@
     transform: translateX(0%);
   }
 }
-.change-font{
-  width: 3vw;
-}
+
 .portaltxt{
   background-color: white;
-  font-size: 2vw;
-  word-spacing: -20vw;
   letter-spacing: -20%;
   position: relative;
   grid-column-start: 1;
