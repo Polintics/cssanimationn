@@ -5,8 +5,23 @@
   grid-template-rows: repeat(5, 1fr); 
   width: 100vw;
   height: 100vh;
-  background-image: url(../img/image.svg);
+    background: linear-gradient(149deg, #6FDC1F 0%, #659CFD 23%, #FFBEF4 41%, #D323CD 59%, #8F3DDF 73%, #2722DE 100%);
+    animation: gradient 1s infinite linear;
+    background-size: 400%; 
+  }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 20% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
 }
+
 
 .grid-item {
   box-sizing: border-box; 
@@ -88,7 +103,6 @@
 }
 .date {
   background-color: white;
-  font-size: 2vw;
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -118,17 +132,22 @@
     transform: translateX(0%);
   }
 }
-
+.change-font{
+  width: 3vw;
+}
 .portaltxt{
   background-color: white;
   font-size: 2vw;
+  word-spacing: -20vw;
+  letter-spacing: -20%;
+  position: relative;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 4;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
   animation: move-rightportal 2s ease-in-out infinite;
   transition: all 1s;

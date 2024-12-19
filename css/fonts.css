@@ -1,0 +1,37 @@
+
+@font-face {
+    font-family: "InterBold";
+    src: url(../fonts/Inter/static/Inter_18pt-Bold.ttf) format("truetype");
+    font-style: bold;
+    font-weight: 700;
+    }
+    .date {
+            font-family: "InterBold", Arial, sans-serif;
+            font-weight: 700;
+    }
+   
+    .portaltxt {
+        font-family: "InterBold", Arial, sans-serif;
+        font-weight: 700;
+}
+
+.transform{
+    font-family: "InterBold", Arial, sans-serif;
+            font-weight: 700;
+}
+.opendoor{
+    font-family: "InterBold", Arial, sans-serif;
+      font-weight: 700; 
+}
+
+@font-face {
+    font-family: "InterBoldItalic";
+    src: url(../fonts/Inter/static/Inter_18pt-BoldItalic.ttf) format("truetype");
+    font-style: bold;
+    font-weight: 700;
+    }
+
+.change-font{
+    font-family: "InterBoldItalic", Arial, sans-serif;
+    font-weight: 700;
+}
