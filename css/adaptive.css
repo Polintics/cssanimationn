@@ -12,6 +12,12 @@
     .opendoor{
         font-size: clamp(5rem, 2.7143rem + 3.5714vw, 7rem);
     }
+    .letter{
+        font-size: clamp(5rem, 0.4286rem + 7.1429vw, 9rem);
+    }
+    .word{
+        font-size: clamp(5rem, 0.4286rem + 7.1429vw, 9rem);
+    }
 }
 @media (min-width: 1024px) and (max-width: 1919px){
     .date{

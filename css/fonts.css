@@ -35,3 +35,13 @@
     font-family: "InterBoldItalic", Arial, sans-serif;
     font-weight: 700;
 }
+
+.letter{
+    font-family: "InterBold", Arial, sans-serif;
+    font-weight: 700; 
+}
+
+.word{
+       font-family: "InterBold", Arial, sans-serif;
+       font-weight: 700; 
+}
