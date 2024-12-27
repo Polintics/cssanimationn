@@ -10,10 +10,6 @@
             font-weight: 700;
     }
    
-    .portaltxt {
-        font-family: "InterBold", Arial, sans-serif;
-        font-weight: 700;
-}
 
 .transform{
     font-family: "InterBold", Arial, sans-serif;
@@ -31,7 +27,7 @@
     font-weight: 700;
     }
 
-.change-font{
+    .italic {
     font-family: "InterBoldItalic", Arial, sans-serif;
     font-weight: 700;
 }
@@ -44,4 +40,13 @@
 .word{
        font-family: "InterBold", Arial, sans-serif;
        font-weight: 700; 
+}
+.portaltxtt {
+    font-family: "InterBold", Arial, sans-serif;
+    font-weight: 700;
+}
+.ticker{
+    font-family: "InterBold", Arial, sans-serif;
+    font-weight: 700; 
+
 }

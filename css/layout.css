@@ -5,9 +5,10 @@
   grid-template-rows: repeat(5, 1fr); 
   width: 100vw;
   height: 100vh;
-    background: linear-gradient(149deg, #6FDC1F 0%, #659CFD 23%, #FFBEF4 41%, #D323CD 59%, #8F3DDF 73%, #2722DE 100%);
-    animation: gradient 1s infinite linear;
-    background-size: 400%; 
+    background: linear-gradient( #6FDC1F , #659CFD , #FFBEF4 , #D323CD , #8F3DDF , #2722DE,  #6FDC1F ); 
+    background-position: 0 0;
+    background-size: 400px;
+    animation: gradientmove infinite alternate 2s;
   }
 
 @keyframes gradient {
@@ -25,7 +26,7 @@
 
 .grid-item {
   box-sizing: border-box; 
-  border: 1px solid black; 
+  border: 1px solid white; 
 
 }
 
@@ -41,22 +42,22 @@
 }
 
 .transform {
-  background-color: white;
-  font-size: 2vw;
+  background-color: rgb(0, 0, 0);
+  color: white;
   grid-column-start: 2;
   grid-column-end: 6;
   grid-row-start: 4;
   grid-row-end: 6;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
   animation: move-left 2s linear infinite;
   transition: all 1s;
   border-style: solid;
-  border-color: black;
+  border-color: white;
   border-width: 1px;
-  outline: 1px solid black;
+  outline: 1px solid white;
   padding-bottom: 1px;
 }
 
@@ -74,8 +75,7 @@
 
 
 .MU {
-  background-color: white;
-  font-size: 2vw;
+  background-color: rgb(0, 0, 0);
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -84,11 +84,11 @@
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  border-left: 1px solid black;
-  border-top: 2px solid black ;
-  border-bottom: 1px solid black ;
-  border-right: 1px solid black;
-  outline: 1px black solid;
+  border-left: 1px solid white;
+  border-top: 2px solid white ;
+  border-bottom: 1px solid white ;
+  border-right: 1px solid white;
+  outline: 1px white solid;
 }
 
 
@@ -108,7 +108,8 @@
   }
 }
 .date {
-  background-color: white;
+  background-color: rgb(0, 0, 0);
+  color: white;
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -120,10 +121,10 @@
   animation: move-right 2s linear infinite;
   transition: all 1s;
   border-style: solid;
-  border-color: black;
+  border-color: white;
   border-width: 1px;
-  border-top: 1px BLACK solid;
-  outline: 1px black solid;
+  border-top: 1px white solid;
+  outline: 1px white solid;
   
 }
 
@@ -146,8 +147,8 @@
 }
 
 .portaltxt{
-  background-color: white;
-  letter-spacing: -20%;
+  background-color: rgb(0, 0, 0);
+  color: white;
   position: relative;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -160,11 +161,12 @@
   animation: move-rightportal 3s linear infinite;
   transition: all 1s;
   outline: solid;
-  outline-color: black;
+  outline-color: white;
   outline-width: 1px;
-  border: 1px black solid;
+  border: 1px white solid;
   margin-left: 2px;
 }
+
 @keyframes move-rightportal {
   100% {
     transform: translateX(0%);
@@ -178,8 +180,9 @@
 }
 
 .opendoor{
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   font-size: 2vw;
+  color: white;
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 1;
@@ -190,28 +193,28 @@
   text-align: center;
   animation: move-down 2s linear infinite;
   transition: all 1s;
-  border-right: 2px black solid;
-  border: 1px black solid;
+  border-right: 2px white solid;
+  border: 1px white solid;
   outline: solid;
-  outline-color: black;
+  outline-color: white;
   outline-width: 1px;
 }
 
 .date:hover{
-  background-color: black;
-  color: white
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0)
 }
 .opendoor:hover{
-  background-color: black;
-  color: white
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0)
 }
 .portaltxt:hover{
-  background-color: black;
-  color: white
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0)
 }
 .transform:hover{
-  background-color: black;
-  color: white
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0)
 }
 
 .portals {
@@ -220,8 +223,9 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between ;
+  justify-content: space-around;
   background-color: black;
+  border: white 2px solid;
   padding-top: 2vh;
   padding-bottom: 2vh;
 }
@@ -233,6 +237,9 @@
 }
 .word {
   color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 .portal {
@@ -297,11 +304,10 @@
   display: flex;
   justify-content: center;
   animation: columnStretch ease-in-out infinite 5s;
-  border: #000000 1px solid;
-  border-left: #000000 2px solid;
+  border: white 1px solid;
+  border-left: white 2px solid;
 }
 .letter {
-
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -317,7 +323,7 @@
   justify-content: center;
   animation: columnStretch ease-in-out infinite 5s;
   background: linear-gradient( #2E7387 , #212121, #2E7387 );
-  border: #000000 1px solid;
+  border: white 1px solid;
   background-position: 0 0;
   background-size: 400px;
 }
@@ -329,7 +335,7 @@
   justify-content: center;
   animation: columnStretch ease-in-out infinite 5s;
   background: linear-gradient( #35AE1B, #FC9827 , #FCD640,  #35AE1B );
-  border: #000000 1px solid;
+  border: white 1px solid;
   background-position: 0 0;
   background-size: 400px;
 }
@@ -340,7 +346,7 @@
   display: flex;
   animation: columnStretch ease-in-out infinite 5s;
   background: linear-gradient( #FFFFFF , #4785BB  , #ED839F , #FFFFFF );
-  border: #000000 1px solid;
+  border: white 1px solid;
   background-position: 0 0;
   background-size: 400px;
 }
@@ -352,8 +358,8 @@
   justify-content: center;
   animation: columnStretch ease-in-out infinite 5s;
   background: linear-gradient( #000000, #2E9A25 , #000000);
-  border: #000000 1px solid;
-  border-right: #000000 2px solid;
+  border: white 1px solid;
+  border-right: white 2px solid;
   background-position: 0 0;
   background-size: 400px;
 }
@@ -382,4 +388,19 @@
   100% {
     height: 50%;
   }
+}
+
+.nameandgroup{
+  height: 20vh;
+  width: 100vw;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: white 2px solid;
+}
+
+.imgname {
+  height: 90%;
+  width: 90%;
 }
