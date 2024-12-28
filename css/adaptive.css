@@ -22,7 +22,7 @@
       font-size: clamp(5rem, 1.5714rem + 5.3571vw, 8rem);
     }
 }
-@media (min-width: 1024px) and (max-width: 1919px){
+@media (min-width: 1024px) and (max-width: 1920px){
     .date{
         grid-column-start: 2;
         grid-column-end: 3;
@@ -206,15 +206,14 @@
   font-size:clamp(2rem, -0.6471rem + 11.7647vw, 5rem);
 }
 .portals {
-  width: 100vw;
-  height: 50vh;
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
   background-color: black;
-  border: white 2px solid;
-
+  border: white 1px solid;
+  padding-bottom: 1%;
 }
 
 .lastSection {
@@ -295,5 +294,14 @@
 
 .hugestroke{
   font-size:clamp(2rem, -0.6471rem + 11.7647vw, 5rem);
+}
+
+.nameandgroup{
+  height: 20vh;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: white 2px solid;
 }
 }
