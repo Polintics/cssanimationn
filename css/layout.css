@@ -144,7 +144,7 @@ html *::-webkit-scrollbar-thumb {
   border-width: 1px;
   border-top: 1px white solid;
   outline: 1px white solid;
-  letter-spacing: -10%;
+  letter-spacing: -4%;
   
 }
 
@@ -220,6 +220,7 @@ html *::-webkit-scrollbar-thumb {
   outline-color: white;
   outline-width: 1px;
   letter-spacing: -10%;
+  line-height: 100%;
 }
 
 .date:hover{
@@ -260,7 +261,7 @@ html *::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   flex-direction: row;
-  letter-spacing: -10%;
+  letter-spacing: -2%;
 }
 
 .portal {

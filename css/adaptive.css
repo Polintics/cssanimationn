@@ -110,7 +110,7 @@
   grid-column-end: 7;
   grid-row-start: 1;
   grid-row-end: 2;
-  letter-spacing: -10%;
+  letter-spacing: -4%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -207,7 +207,7 @@
 
 .word{
   font-size:clamp(2rem, -0.6471rem + 11.7647vw, 5rem);
-  letter-spacing: -10%;
+  letter-spacing: -2%;
 }
 .portals {
   height: 100%;
