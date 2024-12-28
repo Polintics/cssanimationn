@@ -110,6 +110,7 @@
   grid-column-end: 7;
   grid-row-start: 1;
   grid-row-end: 2;
+  letter-spacing: -10%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -123,6 +124,7 @@
 .opendoor{
   font-size:clamp(2rem, -0.6471rem + 11.7647vw, 5rem);
   grid-column-start: 1;
+  letter-spacing: -10%;
   grid-column-end: 5;
   grid-row-start: 4;
   grid-row-end: 6;
@@ -149,7 +151,7 @@
 
 .portaltxt{
   font-size:clamp(2rem, -0.6471rem + 11.7647vw, 5rem);
-  letter-spacing: -20%;
+  letter-spacing: -10%;
   position: relative;
   grid-column-start: 1;
   grid-column-end: 7;
@@ -185,6 +187,7 @@
   grid-row-end: 8;
   animation: move-left 2s linear infinite;
   transition: all 1s;
+  letter-spacing: -10%;
   border-style: solid;
   border-color: rgb(255, 255, 255);
   border-width: 2px;
@@ -204,6 +207,7 @@
 
 .word{
   font-size:clamp(2rem, -0.6471rem + 11.7647vw, 5rem);
+  letter-spacing: -10%;
 }
 .portals {
   height: 100%;

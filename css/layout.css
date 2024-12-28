@@ -66,10 +66,7 @@ html *::-webkit-scrollbar-thumb {
 .transform {
   background-color: rgb(0, 0, 0);
   color: white;
-  grid-column-start: 2;
-  grid-column-end: 6;
-  grid-row-start: 4;
-  grid-row-end: 6;
+ 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,6 +144,7 @@ html *::-webkit-scrollbar-thumb {
   border-width: 1px;
   border-top: 1px white solid;
   outline: 1px white solid;
+  letter-spacing: -10%;
   
 }
 
@@ -174,6 +172,7 @@ html *::-webkit-scrollbar-thumb {
   position: relative;
   grid-column-start: 1;
   grid-column-end: 3;
+  letter-spacing: -10%;
   grid-row-start: 2;
   grid-row-end: 4;
   display: flex;
@@ -220,6 +219,7 @@ html *::-webkit-scrollbar-thumb {
   outline: solid;
   outline-color: white;
   outline-width: 1px;
+  letter-spacing: -10%;
 }
 
 .date:hover{
@@ -260,6 +260,7 @@ html *::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   flex-direction: row;
+  letter-spacing: -10%;
 }
 
 .portal {
